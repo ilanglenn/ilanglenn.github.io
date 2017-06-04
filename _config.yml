@@ -1,0 +1,17 @@
+# Site settings
+title: Glenn's Blog
+email: glenn73831@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Glenn's Blog 
+baseurl: "" # the subpath of your site, e.g. /blog/
+#url: "http://yourdomain.com" # the base hostname & protocol for your site
+github_username:  ilanglenn
+
+markdown: kramdown
+
+kramdown:
+    input: GFM
+  
+highlighter: rouge
+# Google services
+#google_analytics: UA-16805442

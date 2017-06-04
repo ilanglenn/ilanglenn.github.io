@@ -1,0 +1,17 @@
+Statistics:
+    slug: Statistics
+    name: Statistics
+SAS:
+    slug: SAS
+    name: SAS
+R:
+    slug: R
+    name: R
+    
+Python:
+    slug: Python
+    name: Python
+    
+Machine Learning:
+    slug: Machine Learning
+    name: Machine Learning
