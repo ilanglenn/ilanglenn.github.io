@@ -1,140 +1,114 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Glenn's Blog</title>
-    <description>Glenn's Blog 
-</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Jun 2017 13:04:01 -0500</pubDate>
-    <lastBuildDate>Sun, 04 Jun 2017 13:04:01 -0500</lastBuildDate>
-    <generator>Jekyll v3.4.3</generator>
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Note: Python - datacamp.com</title>
+  <meta name="description" content="This is the questions from one of datacamp Python course.">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/syntax-style.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="canonical" href="http://localhost:4000/2017/03/02/Note_datacamp_python1.html">
+  <link rel="alternate" type="application/rss+xml" title="Glenn's Blog" href="http://localhost:4000/feed.xml" />
+
+  <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+       <script type="text/x-mathjax-config">
+         MathJax.Hub.Config({
+           tex2jax: {
+             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+             processEscapes: true
+           }
+         });
+       </script>
+       <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="/js/jq_mathjax_parse.js"></script>
+  <script type="text/javascript" src="/js/jquery.toc.min.js"></script>
+
+  
+</head>
+
+
+  <body>
     
-      <item>
-        <title>Glenn's Resume</title>
-        <description>&lt;p&gt;Glenn’s Resume&lt;/p&gt;
+    <header class="site-header">
 
-&lt;h3 id=&quot;professional-summary&quot;&gt;PROFESSIONAL SUMMARY&lt;/h3&gt;
-&lt;p&gt;Highly motivated and detail oriented Data Scientist with extraordinary acumen in statistical model development, machine learning, data management, and data analysis. Rich experience working with multidisciplinary teams, leading statistics projects and providing statistical insight. Enjoy problem solving and working in a collaborative and dynamic work environment.&lt;/p&gt;
+  <div class="wrapper">
 
-&lt;h3 id=&quot;education&quot;&gt;EDUCATION&lt;/h3&gt;
-&lt;p&gt;The University of Texas Health Science Center at Houston (UTHeath) School of Public Health, Houston, TX &lt;br /&gt;
-Ph.D. in Biostatistics, 08/2011-08/2016 &lt;br /&gt;
-Dissertation: Some statistical issues on progression of Alzheimer’s disease &lt;br /&gt;
-&lt;br /&gt;
-National Chiao Tung University (NCTU), Hsinchu, Taiwan &lt;br /&gt;
-M.S. in Statistics, 02/2007-06/2008 &lt;br /&gt;
-Thesis: Gene selection methods &lt;br /&gt;
-&lt;br /&gt;
-National Tsing Hua University (NTHU), Hsinchu, Taiwan	&lt;br /&gt;
-B.S. in Mathematics, 09/2002-06/2006&lt;/p&gt;
+    <a class="site-title" href="/">Glenn's Blog</a>
 
-&lt;h3 id=&quot;professional-experience&quot;&gt;PROFESSIONAL EXPERIENCE&lt;/h3&gt;
-&lt;h5 id=&quot;department-of-management-policy-and-community-health-uthealth-school-of-public-health----postdoctoral-fellow-102016--present&quot;&gt;Department of Management, Policy, and Community Health, UTHealth School of Public Health    Postdoctoral Fellow, 10/2016 – Present&lt;/h5&gt;
-&lt;h5 id=&quot;research-project--health-and-economic-consequences-of-hpv-related-diseases-in-the-us-and-texas-founded-by-the-university-of-texas-md-anderson-cancer-center-mdacc-moon-shots-program&quot;&gt;Research Project:  Health and economic consequences of HPV-related diseases in the US and Texas, founded by The University of Texas MD Anderson Cancer Center (MDACC) Moon Shots Program&lt;/h5&gt;
-&lt;h6 id=&quot;responsibilities&quot;&gt;Responsibilities:&lt;/h6&gt;
-&lt;ul&gt;
-  &lt;li&gt;Build multi-type HPV transmission models (6000+ ODEs) and develop new statistical methods for longitudinal data to estimate lifetime medical costs&lt;/li&gt;
-  &lt;li&gt;Conduct simulations using Matlab, SAS, C and R. Do parallel computing in high performance computing environment&lt;/li&gt;
-  &lt;li&gt;Managed 1TB Market Scan dataset for method application and evaluate cost-effectiveness of HPV vaccinations&lt;/li&gt;
-  &lt;li&gt;Cooperate with researchers and doctors from UTHealth, MDACC, and Oakland University
-Provide practical suggestions to Texas government for HPV vaccination decision-making and budgeting, to promote health and save money on HPV related disease treatments&lt;/li&gt;
-&lt;/ul&gt;
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
 
-&lt;h5 id=&quot;cancer-prevention-research-training-program-mdacc&quot;&gt;Cancer Prevention Research Training Program, MDACC&lt;/h5&gt;
-&lt;h5 id=&quot;graduate-research-assistant-072012--082016&quot;&gt;Graduate Research Assistant, 07/2012 – 08/2016&lt;/h5&gt;
-&lt;h6 id=&quot;responsibilities-1&quot;&gt;Responsibilities:&lt;/h6&gt;
-&lt;ul&gt;
-  &lt;li&gt;Managed large-scale faculty database and cancer registry data linked with SEER data using SAS&lt;/li&gt;
-  &lt;li&gt;Conducted statistical analysis such as Kaplan Meier, Cox model, linear regression, logistic regression&lt;/li&gt;
-  &lt;li&gt;Provided statistical consulting to postdocs and epidemiologists, and collaborated with researchers from&lt;/li&gt;
-  &lt;li&gt;Baylor College of Medicine, Drexel University College of Medicine, and University of New Mexico School of Medicine&lt;/li&gt;
-  &lt;li&gt;Presented statistical evidence for the efficiency of the Career Develop Program for Minority Faculties at Association of American Medical Colleges (AAMC)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;department-of-biostatistics-uthealth-school-of-public-health&quot;&gt;Department of Biostatistics, UTHealth School of Public Health&lt;/h5&gt;
-&lt;h5 id=&quot;graduate-teaching-assistant-082011--082012-082013--122013-052015--082015&quot;&gt;Graduate Teaching Assistant 08/2011 – 08/2012, 08/2013 – 12/2013, 05/2015 – 08/2015&lt;/h5&gt;
-&lt;h6 id=&quot;responsibilities-2&quot;&gt;Responsibilities:&lt;/h6&gt;
-&lt;ul&gt;
-  &lt;li&gt;Assisted teaching in both fundamental and advanced statistical courses&lt;/li&gt;
-  &lt;li&gt;Experienced with course development, independent lecturing and tutoring, homework grading, etc.&lt;/li&gt;
-  &lt;li&gt;Courses: Fundamental of Biostatistics, Theory of Biostatistics, and Stochastic Process of Biostatistics&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;department-of-biostatistics-uthealth-school-of-public-health-1&quot;&gt;Department of Biostatistics, UTHealth School of Public Health&lt;/h5&gt;
-&lt;h5 id=&quot;graduate-research-assistant-052015--082015&quot;&gt;Graduate Research Assistant 05/2015 – 08/2015&lt;/h5&gt;
-&lt;h5 id=&quot;machine-learning-project--some-hybrid-approaches-to-prediction-of-a-binary-outcome&quot;&gt;Machine Learning Project:  Some hybrid approaches to prediction of a binary outcome&lt;/h5&gt;
-&lt;h6 id=&quot;responsibilities-3&quot;&gt;Responsibilities:&lt;/h6&gt;
-&lt;ul&gt;
-  &lt;li&gt;Developed hybrid machine learning classification methods to predict binary outcomes
-Compared the proposed methods by conducting simulations and applied our proposed methods to an environmental health dataset&lt;/li&gt;
-  &lt;li&gt;Presented the project at 2015 JSM conference, Seattle, WA&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;institute-of-statistics-nctu&quot;&gt;Institute of Statistics, NCTU&lt;/h5&gt;
-&lt;h5 id=&quot;research-assistant-062009--052010&quot;&gt;Research Assistant, 06/2009 – 05/2010&lt;/h5&gt;
-&lt;h5 id=&quot;project--small-n-and-large-p-dataset&quot;&gt;Project:  Small n and large p dataset&lt;/h5&gt;
-&lt;h6 id=&quot;responsibilities-4&quot;&gt;Responsibilities:&lt;/h6&gt;
-&lt;ul&gt;
-  &lt;li&gt;Literature reviews on methods which handle small n and large p dataset&lt;/li&gt;
-  &lt;li&gt;Developed models to select differential variables for few data points but many features
-Applied our methods to a breast cancer microarray dataset from University of South Florida&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;institute-of-statistics-nctu-1&quot;&gt;Institute of Statistics, NCTU&lt;/h5&gt;
-&lt;h5 id=&quot;graduate-teaching-assistant-092007--062008&quot;&gt;Graduate Teaching Assistant, 09/2007 – 06/2008&lt;/h5&gt;
-&lt;h6 id=&quot;responsibilities-5&quot;&gt;Responsibilities:&lt;/h6&gt;
-&lt;ul&gt;
-  &lt;li&gt;Assisted teaching in fundamental mathematics courses&lt;/li&gt;
-  &lt;li&gt;Provided lecturing, tutoring, and homework and exam grading to freshmen&lt;/li&gt;
-  &lt;li&gt;Courses: Calculus I and Calculus II&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;skills&quot;&gt;SKILLS&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Programing skills: C, Matlab, Python, R, SAS, STATA, SQL&lt;/li&gt;
-  &lt;li&gt;Language Skills: English (proficient), Mandarin (native) , Taiwanese (fluent)&lt;/li&gt;
-  &lt;li&gt;Soft Skills: communication, integrity, responsibility, teamwork, flexibility and interpersonal skills&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;honors-and-awards&quot;&gt;HONORS AND AWARDS&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;2016- present: Selected Member, Delta Omega Honorary Society of in Public Health. (Only at most ten of School of Public Health Graduates selected)&lt;/li&gt;
-  &lt;li&gt;2015 Robert H. Bigelow Endowed Scholarship, UTHealth School of Public Health&lt;/li&gt;
-  &lt;li&gt;2013 Girardi/Keese Scholarship in Biostatistics, UTHealth School of Public Health&lt;/li&gt;
-  &lt;li&gt;2013 Boyd Harshbarger Student Travel Award, Southern Reginal Council On Statistics (SRCOS) Summer Conference in Nashville, TN&lt;/li&gt;
-  &lt;li&gt;2013 Recipient of Scholarship North America Taiwanese Engineering &amp;amp; Science Association (NATEA) -Dallas (Given to threeTaiwanese graduate students in Texas, per year)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;publications--presentation&quot;&gt;PUBLICATIONS &amp;amp; PRESENTATION&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Peng, H. L.&lt;/strong&gt; and Chan, W. (2016). Use non-linear mixed effects model to predict unobservable AD symptom duration, paper presented at 2016 JSM, Chicago, IL&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Peng, H. L.&lt;/strong&gt;, Wu, C., and Chan, W. (2015). Some hybrid approaches to prediction of a binary outcome, paper presented at 2015 JSM, Seattle, WA&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Peng, H. L.&lt;/strong&gt;, Aschenbrenner, A. R., and Chan, W. (2013). Estimating the nucleotide substitution matrix using a full four-state transition rate matrix, paper presented in SRCOS Conference, Nashville, TN, and Eastern North American Region of International Biometric Society (ENAR), Orlando, FL&lt;/li&gt;
-  &lt;li&gt;Davis, J., Lee, H., Kim, J., Advani, S., &lt;strong&gt;Peng, H. L.&lt;/strong&gt;, Banfiels, E., Hawk, E., Chang, S., Frazier-Wood, A. (2017). Use of non-steroidal anti-inflammatory drugs in U.S. adults: Changes over time and by demographic. Open Heart, 4(1), e000550.&lt;/li&gt;
-  &lt;li&gt;Szabo, E., Prophet, E., &lt;strong&gt;Peng, H. L.&lt;/strong&gt;, Lee, H., Chang, S., Davis, J. (2017). P1. 01-040 Long-Term Survival in Metastatic Non-Small-Cell Lung Cancer: An Investigation Using Surveillance, Epidemiology and End Results Data. Journal of Thoracic Oncology, 12(1), S474.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Peng, H. L.&lt;/strong&gt;, Chan, W., Lairson, D. R., Xiong, M., Chen, D., and Doody, R. S. (2017). Prediction of unobservable pre-clinic symptom duration for Alzheimer’s patients using their longitudinal quadratic trends of neuropsychological variables (revising)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Peng, H. L.&lt;/strong&gt;, Chan, W., and Kass, J. (2017). Estimation of transition rates for continuous time Markov chain with death when data are clustered and subject to censorship (under review)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Peng, H. L.&lt;/strong&gt;, Aschenbrenner, A. R., von Sternberg, K., Mullen, P., and Chan, W. (2017) A four-state continuous-time Markov chain approach with using the exact likelihood in longitudinal studies of behavioral changes (under review)&lt;/li&gt;
-  &lt;li&gt;Chang, S., Morahan, S. P., Magrane, D., Helitzer, D., Lee, H., Newbill, S., &lt;strong&gt;Peng, H. L.&lt;/strong&gt;, Guindani, M., and Cardinali, F. (2016). Retaining faculty in academic medicine: The impact of career development programs for women. Journal of Women’s Health. 25(7): 687-696.&lt;/li&gt;
-  &lt;li&gt;Agollah, G.D., Wu, G., &lt;strong&gt;Peng, H. L.&lt;/strong&gt;, and Kwon, S. (2015). Dextran sulfate sodium-induced acute colitis impairs dermal lymphatic function in mice. World journal of gastroenterology, 21(45), 12767.&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Tue, 02 May 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/05/02/resume.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/05/02/resume.html</guid>
+      <div class="trigger">
         
+          
         
-      </item>
-    
-      <item>
-        <title>Note: Python - datacamp.com</title>
-        <description>&lt;p&gt;This is the questions from one of datacamp Python course.&lt;/p&gt;
+          
+        
+          
+						<a class="page-link" href="/about/">About Me</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <a class="page-link" href="/tags/Python/">Python</a>
+        <a class="page-link" href="/tags/R/">R</a>
+        <a class="page-link" href="/tags/Statistics/">Statistics</a>
+        <a class="page-link" href="/tags/SAS/">SAS</a>
+        <a class="page-link" href="/tags/Machine Learning/">Machine Learning</a>
+      </div>  
+    </nav>
 
-&lt;p&gt;Multiple plots on single axis&lt;/p&gt;
+  </div>
 
-&lt;p&gt;It is time now to put together some of what you have learned and combine line plots on a common set of axes. The data set here comes from records of undergraduate degrees awarded to women in a variety of fields from 1970 to 2011. You can compare trends in degrees most easily by viewing two curves on the same set of axes.
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Note: Python - datacamp.com</h1>
+    <p class="post-meta">Mar 2, 2017</p>
+    <p id="post-meta"><i class="fa fa-tag"></i>: <a href="/tags/Python/">Python</a></p>
+  </header>
+
+  <article class="post-content">
+    <p>This is the questions from one of datacamp Python course.</p>
+
+<p>Multiple plots on single axis</p>
+
+<p>It is time now to put together some of what you have learned and combine line plots on a common set of axes. The data set here comes from records of undergraduate degrees awarded to women in a variety of fields from 1970 to 2011. You can compare trends in degrees most easily by viewing two curves on the same set of axes.
 Here, three NumPy arrays have been pre-loaded for you: year (enumerating years from 1970 to 2011 inclusive), physical_sciences (representing the percentage of Physical Sciences degrees awarded to women each in corresponding year), and computer_science (representing the percentage of Computer Science degrees awarded to women in each corresponding year).
 You will issue two plt.plot() commands to draw line plots of different colors on the same set of axes. Here, year represents the x-axis, while physical_sciences and computer_science are the y-axes.
 Note that in these exercises, when we ask you to specify the color parameter in your plotting statements, we require you to be explicit and specify the full color, i.e ‘blue’ and not ‘b’. The instructions, sample code, and solution code will reflect this.
@@ -142,9 +116,9 @@ Instructions
 •	Import matplotlib.pyplot as its usual alias.
 •	Add a ‘blue’ line plot of the % of degrees awarded to women in the Physical Sciences (physical_sciences) from 1970 to 2011 (year). Note that the x-axis should be specified first.
 •	Add a ‘red’ line plot of the % of degrees awarded to women in Computer Science (computer_science) from 1970 to 2011 (year).
-•	Use plt.show() to display the figure with the curves on the same axes.&lt;/p&gt;
+•	Use plt.show() to display the figure with the curves on the same axes.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Import matplotlib.pyplot
+<pre><code class="language-{python}"># Import matplotlib.pyplot
 import matplotlib.pyplot as plt
 
 # Plot in blue the % of degrees awarded to women in the Physical Sciences
@@ -155,11 +129,11 @@ plt.plot(year, computer_science,color='red')
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;p&gt;Using axes()&lt;/p&gt;
+<p>Using axes()</p>
 
-&lt;p&gt;Rather than overlaying line plots on common axes, you may prefer to plot different line plots on distinct axes. The command plt.axes() is one way to do this (but it requires specifying coordinates relative to the size of the figure).
+<p>Rather than overlaying line plots on common axes, you may prefer to plot different line plots on distinct axes. The command plt.axes() is one way to do this (but it requires specifying coordinates relative to the size of the figure).
 Here, you have the same three arrays year, physical_sciences, and computer_science representing percentages of degrees awarded to women over a range of years. You will use plt.axes() to create separate sets of axes in which you will draw each line plot.
 In calling plt.axes([xlo, ylo, width, height]), a set of axes is created and made active with lower corner at coordinates (xlo, ylo) of the specified width and height. Note that these coordinates are passed to plt.axes() in the form of a list.
 The coordinates and lengths are values between 0 and 1 representing lengths relative to the dimensions of the figure. After issuing a plt.axes() command, plots generated are put in that set of axes.
@@ -168,9 +142,9 @@ Instructions
 o	Note: Remember to pass these coordinates to plt.axes() in the form of a list: [xlo, ylo, width, height].
 •	Plot the percentage of degrees awarded to women in Physical Sciences in blue in the active axes just created.
 •	Create a set of plot axes with lower corner xlo and ylo of 0.525 and 0.05, width of 0.425, and height of 0.9 (in units relative to the figure dimension).
-•	Plot the percentage of degrees awarded to women in Computer Science in red in the active axes just created.&lt;/p&gt;
+•	Plot the percentage of degrees awarded to women in Computer Science in red in the active axes just created.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Create plot axes for the first line plot
+<pre><code class="language-{python}"># Create plot axes for the first line plot
 plt.axes([0.05 , 0.05 , 0.425, 0.9])
 
 # Plot in blue the % of degrees awarded to women in the Physical Sciences
@@ -184,18 +158,18 @@ plt.plot(year, computer_science, color='red')
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Using subplot() (1)&lt;/p&gt;
+</code></pre>
+<p>Using subplot() (1)</p>
 
-&lt;p&gt;The command plt.axes() requires a lot of effort to use well because the coordinates of the axes need to be set manually. A better alternative is to use plt.subplot() to determine the layout automatically.
+<p>The command plt.axes() requires a lot of effort to use well because the coordinates of the axes need to be set manually. A better alternative is to use plt.subplot() to determine the layout automatically.
 In this exercise, you will continue working with the same arrays from the previous exercises: year, physical_sciences, and computer_science. Rather than using plt.axes() to explicitly lay out the axes, you will use plt.subplot(m, n, k) to make the subplot grid of dimensions m by n and to make the kth subplot active (subplots are numbered starting from 1 row-wise from the top left corner of the subplot grid).
 Instructions
-•	Use plt.subplot() to create a figure with 1x2 subplot layout &amp;amp; make the first subplot active.
+•	Use plt.subplot() to create a figure with 1x2 subplot layout &amp; make the first subplot active.
 •	Plot the percentage of degrees awarded to women in Physical Sciences in blue in the active subplot.
 •	Use plt.subplot() again to make the second subplot active in the current 1x2 subplot grid.
-•	Plot the percentage of degrees awarded to women in Computer Science in red in the active subplot.&lt;/p&gt;
+•	Plot the percentage of degrees awarded to women in Computer Science in red in the active subplot.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Create a figure with 1x2 subplot and make the left subplot active
+<pre><code class="language-{python}"># Create a figure with 1x2 subplot and make the left subplot active
 plt.subplot(1,2,1)
 
 # Plot in blue the % of degrees awarded to women in the Physical Sciences
@@ -212,18 +186,18 @@ plt.title('Computer Science')
 # Use plt.tight_layout() to improve the spacing between subplots
 plt.tight_layout()
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Using subplot() (2)&lt;/p&gt;
+</code></pre>
+<p>Using subplot() (2)</p>
 
-&lt;p&gt;Now you have some familiarity with plt.subplot(), you can use it to plot more plots in larger grids of subplots of the same figure.
+<p>Now you have some familiarity with plt.subplot(), you can use it to plot more plots in larger grids of subplots of the same figure.
 Here, you will make a 2×22×2 grid of subplots and plot the percentage of degrees awarded to women in Physical Sciences (using physical_sciences), in Computer Science (using computer_science), in Health Professions (using health), and in Education (using education).
 Instructions
 •	Create a figure with 2×22×2 subplot layout, make the top, left subplot active, and plot the % of degrees awarded to women in Physical Sciences in blue in the active subplot.
 •	Make the top, right subplot active in the current 2×22×2 subplot grid and plot the % of degrees awarded to women in Computer Science in red in the active subplot.
 •	Make the bottom, left subplot active in the current 2×22×2 subplot grid and plot the % of degrees awarded to women in Health Professions in green in the active subplot.
-•	Make the bottom, right subplot active in the current 2×22×2 subplot grid and plot the % of degrees awarded to women in Education in yellow in the active subplot.&lt;/p&gt;
+•	Make the bottom, right subplot active in the current 2×22×2 subplot grid and plot the % of degrees awarded to women in Education in yellow in the active subplot.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Create a figure with 2x2 subplot layout and make the top left subplot active
+<pre><code class="language-{python}"># Create a figure with 2x2 subplot layout and make the top left subplot active
 plt.subplot(2,2,1)
 
 # Plot in blue the % of degrees awarded to women in the Physical Sciences
@@ -254,19 +228,19 @@ plt.title('Education')
 # Improve the spacing between subplots and display them
 plt.tight_layout()
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Using xlim(), ylim()&lt;/p&gt;
+</code></pre>
+<p>Using xlim(), ylim()</p>
 
-&lt;p&gt;In this exercise, you will work with the matplotlib.pyplot interface to quickly set the x- and y-limits of your plots.
+<p>In this exercise, you will work with the matplotlib.pyplot interface to quickly set the x- and y-limits of your plots.
 You will now create the same figure as in the previous exercise using plt.plot(), this time setting the axis extents using plt.xlim() and plt.ylim(). These commands allow you to either zoom or expand the plot or to set the axis ranges to include important values (such as the origin).
 In this exercise, as before, the percentage of women graduates in Computer Science and in the Physical Sciences are held in the variables computer_science and physical_sciences respectively over year.
 After creating the plot, you will use plt.savefig() to export the image produced to a file.
 Instructions
 •	Use plt.xlim() to set the x-axis range to the period between the years 1990 and 2010.
 •	Use plt.ylim() to set the y-axis range to the interval between 0% and 50% of degrees awarded.
-•	Display the final figure with plt.show() and save the output to ‘xlim_and_ylim.png’.&lt;/p&gt;
+•	Display the final figure with plt.show() and save the output to ‘xlim_and_ylim.png’.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Plot the % of degrees awarded to women in Computer Science and the Physical Sciences
+<pre><code class="language-{python}"># Plot the % of degrees awarded to women in Computer Science and the Physical Sciences
 plt.plot(year,computer_science, color='red') 
 plt.plot(year, physical_sciences, color='blue')
 
@@ -286,16 +260,16 @@ plt.show()
 
 # Save the image as 'xlim_and_ylim.png'
 plt.savefig('xlim_and_ylim.png')
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Using axis()&lt;/p&gt;
+</code></pre>
+<p>Using axis()</p>
 
-&lt;p&gt;Using plt.xlim() and plt.ylim() are useful for setting the axis limits individually. In this exercise, you will see how you can pass a 4-tuple to plt.axis() to set limits for both axes at once. For example, plt.axis((1980,1990,0,75)) would set the extent of the x-axis to the period between 1980 and 1990, and would set the y-axis extent from 0 to 75% degrees award.
+<p>Using plt.xlim() and plt.ylim() are useful for setting the axis limits individually. In this exercise, you will see how you can pass a 4-tuple to plt.axis() to set limits for both axes at once. For example, plt.axis((1980,1990,0,75)) would set the extent of the x-axis to the period between 1980 and 1990, and would set the y-axis extent from 0 to 75% degrees award.
 Once again, the percentage of women graduates in Computer Science and in the Physical Sciences are held in the variables computer_science and physical_sciences where each value was measured at the corresponding year held in the year variable.
 Instructions
 •	Use plt.axis() to select the time period between 1990 and 2010 on the x-axis as well as the interval between 0 and 50% awarded on the y-axis.
-•	Save the resulting plot as ‘axis_limits.png’.&lt;/p&gt;
+•	Save the resulting plot as ‘axis_limits.png’.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Plot in blue the % of degrees awarded to women in Computer Science
+<pre><code class="language-{python}"># Plot in blue the % of degrees awarded to women in Computer Science
 plt.plot(year,computer_science, color='blue')
 
 # Plot in red the % of degrees awarded to women in the Physical Sciences
@@ -309,17 +283,17 @@ plt.show()
 
 # Save the figure as 'axis_limits.png'
 plt.savefig('axis_limits.png')
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Using legend()&lt;/p&gt;
+</code></pre>
+<p>Using legend()</p>
 
-&lt;p&gt;Legends are useful for distinguishing between mutiple datasets displayed on common axes. The relevant data are created using specific line colors or markers in various plot commands. Using the keyword argument label in the plotting function associates a string to use in a legend.
+<p>Legends are useful for distinguishing between mutiple datasets displayed on common axes. The relevant data are created using specific line colors or markers in various plot commands. Using the keyword argument label in the plotting function associates a string to use in a legend.
 For example, here, you will plot enrollment of women in the Physical Sciences and in Computer Science over time. You can label each curve by passing a label argument to the plotting call, and request a legend using plt.legend(). Specifying the keyword argument loc determines where the legend will be placed.
 Instructions
 •	Modify the plot command provided that draws the enrollment of women in Computer Science over time so that the curve is labelled ‘Computer Science’ in the legend.
 •	Modify the plot command provided that draws the enrollment of women in the Physical Sciences over time so that the curve is labelled ‘Physical Sciences’ in the legend.
-•	Add a legend at the lower center (i.e., loc=’lower center’).&lt;/p&gt;
+•	Add a legend at the lower center (i.e., loc=’lower center’).</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Specify the label 'Computer Science'
+<pre><code class="language-{python}"># Specify the label 'Computer Science'
 plt.plot(year, computer_science, color='red', label='Computer Science') 
 
 # Specify the label 'Physical Sciences' 
@@ -333,10 +307,10 @@ plt.xlabel('Year')
 plt.ylabel('Enrollment (%)')
 plt.title('Undergraduate enrollment of women')
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Using annotate()&lt;/p&gt;
+</code></pre>
+<p>Using annotate()</p>
 
-&lt;p&gt;It is often useful to annotate a simple plot to provide context. This makes the plot more readable and can highlight specific aspects of the data. Annotations like text and arrows can be used to emphasize specific observations.
+<p>It is often useful to annotate a simple plot to provide context. This makes the plot more readable and can highlight specific aspects of the data. Annotations like text and arrows can be used to emphasize specific observations.
 Here, you will once again plot enrollment of women in the Physical Sciences and Computer science over time. The legend is set up as before. Additionally, you will mark the inflection point when enrollment of women in Computer Science reached a peak and started declining using plt.annotate().
 To enable an arrow, set arrowprops=dict(facecolor=’black’). The arrow will point to the location given by xy and the text will appear at the location given by xytext.
 Instructions
@@ -347,9 +321,9 @@ o	Label the arrow ‘Maximum’. The parameter for this is s, but you don’t ha
 o	Pass in the arguments to xy and xytext as tuples.
 o	For xy, use the yr_max and cs_max that you computed.
 o	For xytext, use (yr_max+5, cs_max+5) to specify the displacement of the label from the tip of the arrow.
-o	Draw the arrow by specifying the keyword argument arrowprops=dict(facecolor=’black’).&lt;/p&gt;
+o	Draw the arrow by specifying the keyword argument arrowprops=dict(facecolor=’black’).</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Plot with legend as before
+<pre><code class="language-{python}"># Plot with legend as before
 plt.plot(year, computer_science, color='red', label='Computer Science') 
 plt.plot(year, physical_sciences, color='blue', label='Physical Sciences')
 plt.legend(loc='bottom right')
@@ -368,15 +342,15 @@ plt.xlabel('Year')
 plt.ylabel('Enrollment (%)')
 plt.title('Undergraduate enrollment of women')
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Modifying styles&lt;/p&gt;
+</code></pre>
+<p>Modifying styles</p>
 
-&lt;p&gt;Matplotlib comes with a number of different stylesheets to customize the overall look of different plots. To activate a particular stylesheet you can simply call plt.style.use() with the name of the style sheet you want. To list all the available style sheets you can execute: print(plt.style.available).
+<p>Matplotlib comes with a number of different stylesheets to customize the overall look of different plots. To activate a particular stylesheet you can simply call plt.style.use() with the name of the style sheet you want. To list all the available style sheets you can execute: print(plt.style.available).
 Instructions
 •	Import matplotlib.pyplot as its usual alias.
-•	Activate the ‘ggplot’ style sheet with plt.style.use().&lt;/p&gt;
+•	Activate the ‘ggplot’ style sheet with plt.style.use().</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Import matplotlib.pyplot
+<pre><code class="language-{python}"># Import matplotlib.pyplot
 import matplotlib.pyplot as plt
 
 # Set the style to 'ggplot'
@@ -412,11 +386,11 @@ plt.title('Education')
 # Improve spacing between subplots and display them
 plt.tight_layout()
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;p&gt;Generating meshes&lt;/p&gt;
+<p>Generating meshes</p>
 
-&lt;p&gt;In order to visualize two-dimensional arrays of data, it is necessary to understand how to generate and manipulate 2-D arrays. Many Matplotlib plots support arrays as input and in particular, they support NumPy arrays. The NumPy library is the most widely-supported means for supporting numeric arrays in Python.
+<p>In order to visualize two-dimensional arrays of data, it is necessary to understand how to generate and manipulate 2-D arrays. Many Matplotlib plots support arrays as input and in particular, they support NumPy arrays. The NumPy library is the most widely-supported means for supporting numeric arrays in Python.
 In this exercise, you will use the meshgrid function in NumPy to generate 2-D arrays which you will then visualise using plt.imshow(). The simplest way to generate a meshgrid is as follows:
 import numpy as np
 Y,X = np.meshgrid(range(10),range(20))
@@ -426,9 +400,9 @@ Instructions
 •	Generate two one-dimensional arrays u and v using np.linspace(). The array u should contain 41 values uniformly spaced beween -2 and +2. The array v should contain 21 values uniformly spaced between -1 and +1.
 •	Construct two two-dimensional arrays X and Y from u and v using np.meshgrid(). The resulting arrays should have shape (41,21).
 •	After the array Z is computed using X and Y, visualize the array Z using plt.pcolor() and plt.show().
-•	Save the resulting figure as ‘sine_mesh.png’.&lt;/p&gt;
+•	Save the resulting figure as ‘sine_mesh.png’.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Import numpy and matplotlib.pyplot
+<pre><code class="language-{python}"># Import numpy and matplotlib.pyplot
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -448,11 +422,11 @@ plt.show()
 
 # Save the figure to 'sine_mesh.png'
 plt.savefig('sine_mesh.png')
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;p&gt;Contour &amp;amp; filled contour plots&lt;/p&gt;
+<p>Contour &amp; filled contour plots</p>
 
-&lt;p&gt;Although plt.imshow() or plt.pcolor() are often used to visualize a 2-D array in entirety, there are other ways of visualizing such data without displaying all the available sample values. One option is to use the array to compute contours that are visualized instead.
+<p>Although plt.imshow() or plt.pcolor() are often used to visualize a 2-D array in entirety, there are other ways of visualizing such data without displaying all the available sample values. One option is to use the array to compute contours that are visualized instead.
 Two types of contour plot supported by Matplotlib are plt.contour() and plt.contourf() where the former displays the contours as lines and the latter displayed filled areas between contours. Both these plotting commands accept a two dimensional array from which the appropriate contours are computed.
 In this exercise, you will visualize a 2-D array repeatedly using both plt.contour() and plt.contourf(). You will use plt.subplot() to display several contour plots in a common figure, using the meshgrid X, Yas the axes. For example, plt.contour(X, Y, Z) generates a default contour map of the array Z.
 Instructions
@@ -461,9 +435,9 @@ o	Generate a default contour plot of the array Z in the upper left subplot.
 o	Generate a contour plot of the array Z in the upper right subplot with 20 contours.
 o	Generate a default filled contour plot of the array Z in the lower left subplot.
 o	Generate a default filled contour plot of the array Z in the lower right subplot with 20contours.
-•	Improve the spacing between the subplots with plt.tight_layout() and display the figure.&lt;/p&gt;
+•	Improve the spacing between the subplots with plt.tight_layout() and display the figure.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Generate a default contour map of the array Z
+<pre><code class="language-{python}"># Generate a default contour map of the array Z
 plt.subplot(2,2,1)
 plt.contour(X,Y,Z)
 
@@ -484,23 +458,23 @@ plt.tight_layout()
 
 # Display the figure
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Modifying colormaps&lt;/p&gt;
+</code></pre>
+<p>Modifying colormaps</p>
 
-&lt;p&gt;When displaying a 2-D array with plt.imshow() or plt.pcolor(), the values of the array are mapped to a corresponding color. The set of colors used is determined by a colormap which smoothly maps values to colors, making it easy to understand the structure of the data at a glance.
+<p>When displaying a 2-D array with plt.imshow() or plt.pcolor(), the values of the array are mapped to a corresponding color. The set of colors used is determined by a colormap which smoothly maps values to colors, making it easy to understand the structure of the data at a glance.
 It is often useful to change the colormap from the default ‘jet’ colormap used by matplotlib. A good colormap is visually pleasing and conveys the structure of the data faithfully and in a way that makes sense for the application.
 •	Some matplotlib colormaps have unique names such as ‘jet’, ‘coolwarm’, ‘magma’ and ‘viridis’.
 •	Others have a naming scheme based on overall color such as ‘Greens’, ‘Blues’, ‘Reds’, and ‘Purples’.
 •	Another four colormaps are based on the seasons, namely ‘summer’, ‘autumn’, ‘winter’ and ‘spring’.
-•	You can insert the option cmap=&lt;name&gt; into most matplotlib functions to change the color map of the resulting plot.
+•	You can insert the option cmap=<name> into most matplotlib functions to change the color map of the resulting plot.
 In this exercise, you will explore four different colormaps together using plt.subplot(). You will use a pregenerated array Z and a meshgrid X, Y to generate the same filled contour plot with four different color maps. Be sure to also add a color bar to each filled contour plot with plt.colorbar().
 Instructions
 •	Modify the call to plt.contourf() so the filled contours in the top left subplot use the 'viridis' colormap.
 •	Modify the call to plt.contourf() so the filled contours in the top right subplot use the 'gray' colormap.
 •	Modify the call to plt.contourf() so the filled contours in the bottom left subplot use the 'autumn' colormap.
-•	Modify the call to plt.contourf() so the filled contours in the bottom right subplot use the 'winter' colormap.&lt;/name&gt;&lt;/p&gt;
+•	Modify the call to plt.contourf() so the filled contours in the bottom right subplot use the 'winter' colormap.</name></p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Create a filled contour plot with a color map of 'viridis'
+<pre><code class="language-{python}"># Create a filled contour plot with a color map of 'viridis'
 plt.subplot(2,2,1)
 plt.contourf(X,Y,Z,20, cmap='viridis')
 plt.colorbar()
@@ -527,10 +501,10 @@ plt.title('Winter')
 # Improve the spacing between subplots and display them
 plt.tight_layout()
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Using hist2d()&lt;/p&gt;
+</code></pre>
+<p>Using hist2d()</p>
 
-&lt;p&gt;Given a set of ordered pairs describing data points, you can count the number of points with similar values to construct a two-dimensional histogram. This is similar to a one-dimensional histogram, but it describes the joint variation of two random variables rather than just one.
+<p>Given a set of ordered pairs describing data points, you can count the number of points with similar values to construct a two-dimensional histogram. This is similar to a one-dimensional histogram, but it describes the joint variation of two random variables rather than just one.
 In matplotlib, one function to visualize 2-D histograms is plt.hist2d().
 •	You specify the coordinates of the points using plt.hist2d(x,y) assuming x and y are two vectors of the same length.
 •	You can specify the number of bins with the argument bins=(nx, ny) where nx is the number of bins to use in the horizontal direction and ny is the number of bins to use in the vertical direction.
@@ -543,9 +517,9 @@ Instructions
 o	Put hp along the horizontal axis and mpg along the vertical axis.
 o	Specify 20 by 20 rectangular bins with the bins argument.
 o	Specify the region covered with the optional range argument so that the plot samples hpbetween 40 and 235 on the x-axis and mpg between 8 and 48 on the y-axis.
-•	Add a color bar to the histogram.&lt;/p&gt;
+•	Add a color bar to the histogram.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Generate a 2-D histogram
+<pre><code class="language-{python}"># Generate a 2-D histogram
 plt.hist2d(hp ,mpg,bins=(20,20),range=((40,235),(8,48)))
 
 # Add a color bar to the histogram
@@ -556,10 +530,10 @@ plt.xlabel('Horse power [hp]')
 plt.ylabel('Miles per gallon [mpg]')
 plt.title('hist2d() plot')
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Using hexbin()&lt;/p&gt;
+</code></pre>
+<p>Using hexbin()</p>
 
-&lt;p&gt;The function plt.hist2d() uses rectangular bins to construct a two dimensional histogram. As an alternative, the function plt.hexbin() uses hexagonal bins. The underlying algorithm (based on this article from 1987) constructs a hexagonal tesselation of a planar region and aggregates points inside hexagonal bins.
+<p>The function plt.hist2d() uses rectangular bins to construct a two dimensional histogram. As an alternative, the function plt.hexbin() uses hexagonal bins. The underlying algorithm (based on this article from 1987) constructs a hexagonal tesselation of a planar region and aggregates points inside hexagonal bins.
 •	The optional gridsize argument (default 100) gives the number of hexagons across the x-direction used in the hexagonal tiling. If specified as a list or a tuple of length two, gridsize fixes the number of hexagon in the x- and y-directions respectively in the tiling.
 •	The optional parameter extent=(xmin, xmax, ymin, ymax) specifies rectangular region covered by the hexagonal tiling. In that case, xmin and xmax are the respective lower and upper limits for the variables on the x-axis and ymin and ymax are the respective lower and upper limits for the variables on the y-axis.
 In this exercise, you’ll use the same auto-mpg data as in the last exercise (again using arrays mpg and hp). This time, you’ll use plt.hexbin() to visualize the two-dimensional histogram.
@@ -568,9 +542,9 @@ Instructions
 o	Put hp along the horizontal axis and mpg along the vertical axis.
 o	Specify a hexagonal tesselation with 15 hexagons across the x-direction and 12 hexagons across the y-direction using gridsize.
 o	Specify the rectangular region covered with the optional extent argument: use hp from 40 to 235 and mpg from 8 to 48.
-•	Add a color bar to the histogram.&lt;/p&gt;
+•	Add a color bar to the histogram.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Generate a 2d histogram with hexagonal bins
+<pre><code class="language-{python}"># Generate a 2d histogram with hexagonal bins
 plt.hexbin(hp,mpg,gridsize=(15,12),extent=(40,235,8,48))
 
            
@@ -582,22 +556,22 @@ plt.xlabel('Horse power [hp]')
 plt.ylabel('Miles per gallon [mpg]')
 plt.title('hexbin() plot')
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Loading, examining images&lt;/p&gt;
+</code></pre>
+<p>Loading, examining images</p>
 
-&lt;p&gt;Color images such as photographs contain the intensity of the red, green and blue color channels.
+<p>Color images such as photographs contain the intensity of the red, green and blue color channels.
 •	To read an image from file, use plt.imread() by passing the path to a file, such as a PNG or JPG file.
 •	The color image can be plotted as usual using plt.imshow().
 •	The resulting image loaded is a NumPy array of three dimensions. The array typically has dimensions M×N×3M×N×3, where M×NM×N is the dimensions of the image. The third dimensions are referred to as color channels (typically red, green, and blue).
 •	The color channels can be extracted by Numpy array slicing.
-In this exercise, you will load &amp;amp; display an image of an astronaut (by NASA (Public domain), via Wikimedia Commons). You will also examine its attributes to understand how color images are represented.
+In this exercise, you will load &amp; display an image of an astronaut (by NASA (Public domain), via Wikimedia Commons). You will also examine its attributes to understand how color images are represented.
 Instructions
 •	Load the file ‘480px-Astronaut-EVA.jpg’ into an array.
 •	Print the shape of the img array. How wide and tall do you expect the image to be?
 •	Prepare img for display using plt.imshow().
-•	Turn off the axes using plt.axis(‘off’).&lt;/p&gt;
+•	Turn off the axes using plt.axis(‘off’).</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Load the image into an array: img
+<pre><code class="language-{python}"># Load the image into an array: img
 img = plt.imread('480px-Astronaut-EVA.jpg')
 
 # Print the shape of the image
@@ -609,19 +583,19 @@ plt.imshow(img)
 # Hide the axes
 plt.axis('off')
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Pseudocolor plot from image data&lt;/p&gt;
+</code></pre>
+<p>Pseudocolor plot from image data</p>
 
-&lt;p&gt;Image data comes in many forms and it is not always appropriate to display the available channels in RGB space. In many situations, an image may be processed and analysed in some way before it is visualized in pseudocolor, also known as ‘false’ color.
+<p>Image data comes in many forms and it is not always appropriate to display the available channels in RGB space. In many situations, an image may be processed and analysed in some way before it is visualized in pseudocolor, also known as ‘false’ color.
 In this exercise, you will perform a simple analysis using the image showing an astronaut as viewed from space. Instead of simply displaying the image, you will compute the total intensity across the red, green and blue channels. The result is a single two dimensional array which you will display using plt.imshow() with the ‘gray’colormap.
 Instructions
 •	Print the shape of the existing image array.
 •	Compute the sum of the red, green, and blue channels of img by using the .sum() method with axis=2.
 •	Print the shape of the intensity array to verify this is the shape you expect.
 •	Plot intensity with plt.imshow() using a ‘gray’ colormap.
-•	Add a colorbar to the figure.&lt;/p&gt;
+•	Add a colorbar to the figure.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Load the image into an array: img
+<pre><code class="language-{python}"># Load the image into an array: img
 img = plt.imread('480px-Astronaut-EVA.jpg')
 
 # Print the shape of the image
@@ -642,19 +616,19 @@ plt.colorbar()
 # Hide the axes and show the figure
 plt.axis('off')
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Extent and aspect&lt;/p&gt;
+</code></pre>
+<p>Extent and aspect</p>
 
-&lt;p&gt;When using plt.imshow() to display an array, the default behavior is to keep pixels square so that the height to width ratio of the output matches the ratio determined by the shape of the array. In addition, by default, the x- and y-axes are labeled by the number of samples in each direction.
+<p>When using plt.imshow() to display an array, the default behavior is to keep pixels square so that the height to width ratio of the output matches the ratio determined by the shape of the array. In addition, by default, the x- and y-axes are labeled by the number of samples in each direction.
 The ratio of the displayed width to height is known as the image aspect and the range used to label the x- and y-axes is known as the image extent. The default aspect value of ‘auto’ keeps the pixels square and the extents are automatically computed from the shape of the array if not specified otherwise.
 In this exercise, you will investigate how to set these options explicitly by plotting the same image in a 2 by 2 grid of subplots with distinct aspect and extent options.
 Instructions
 •	Display img in the top left subplot with horizontal extent from -1 to 1, vertical extent from -1 to 1, and aspect ratio 0.5.
 •	Display img in the top right subplot with horizontal extent from -1 to 1, vertical extent from -1 to 1, and aspect ratio 1.
 •	Display img in the bottom left subplot with horizontal extent from -1 to 1, vertical extent from -1 to 1, and aspect ratio 2.
-•	Display img in the bottom right subplot with horizontal extent from -2 to 2, vertical extent from -1 to 1, and aspect ratio 2.&lt;/p&gt;
+•	Display img in the bottom right subplot with horizontal extent from -2 to 2, vertical extent from -1 to 1, and aspect ratio 2.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Load the image into an array: img
+<pre><code class="language-{python}"># Load the image into an array: img
 img = plt.imread('480px-Astronaut-EVA.jpg')
 
 # Specify the extent and aspect ratio of the top left subplot
@@ -688,27 +662,27 @@ plt.imshow(img, extent=(-2,2,-1,1), aspect=2)
 # Improve spacing and display the figure
 plt.tight_layout()
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Rescaling pixel intensities&lt;/p&gt;
+</code></pre>
+<p>Rescaling pixel intensities</p>
 
-&lt;p&gt;Sometimes, low contrast images can be improved by rescaling their intensities. For instance, this image of Hawkes Bay, New Zealand (originally by Phillip Capper, modified by User:Konstable, via Wikimedia Commons, CC BY 2.0) has no pixel values near 0 or near 255 (the limits of valid intensities).
+<p>Sometimes, low contrast images can be improved by rescaling their intensities. For instance, this image of Hawkes Bay, New Zealand (originally by Phillip Capper, modified by User:Konstable, via Wikimedia Commons, CC BY 2.0) has no pixel values near 0 or near 255 (the limits of valid intensities).
 For this exercise, you will do a simple rescaling (remember, an image is NumPy array) to translate and stretch the pixel intensities so that the intensities of the new image fill the range from 0 to 255.
 Instructions
 •	Use the Numpy array methods .min() and .max() to save the minimum and maximum values from the array image as pmin and pmax respectively.
 •	Create a new 2-D array rescaled_image using 256*(image-pmin)/(pmax-pmin)
 •	Plot the original array image in the top subplot of a 2×12×1 grid.
-•	Plot the new array rescaled_image in the bottom subplot of a 2×12×1 grid.&lt;/p&gt;
+•	Plot the new array rescaled_image in the bottom subplot of a 2×12×1 grid.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Load the image into an array: image
+<pre><code class="language-{python}"># Load the image into an array: image
 image = plt.imread('640px-Unequalized_Hawkes_Bay_NZ.jpg')
 
 # Extract minimum and maximum values from the image: pmin, pmax
 pmin, pmax = image.min(), image.max()
-print(&quot;The smallest &amp;amp; largest pixel intensities are %d &amp;amp; %d.&quot; % (pmin, pmax))
+print("The smallest &amp; largest pixel intensities are %d &amp; %d." % (pmin, pmax))
 
 # Rescale the pixels: rescaled_image
 rescaled_image = 256*(image-pmin)/(pmax-pmin)
-print(&quot;The rescaled smallest &amp;amp; largest pixel intensities are %.1f &amp;amp; %.1f.&quot; % 
+print("The rescaled smallest &amp; largest pixel intensities are %.1f &amp; %.1f." % 
       (rescaled_image.min(), rescaled_image.max()))
 
 # Display the original image in the top subplot
@@ -724,18 +698,18 @@ plt.axis('off')
 plt.imshow(rescaled_image)
 
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Simple linear regressions&lt;/p&gt;
+</code></pre>
+<p>Simple linear regressions</p>
 
-&lt;p&gt;As you have seen, seaborn provides a convenient interface to generate complex and great-looking statistical plots. One of the simplest things you can do using seaborn is to fit and visualize a simple linear regression between two variables using sns.lmplot().
+<p>As you have seen, seaborn provides a convenient interface to generate complex and great-looking statistical plots. One of the simplest things you can do using seaborn is to fit and visualize a simple linear regression between two variables using sns.lmplot().
 One difference between seaborn and regular matplotlib plotting is that you can pass pandas DataFrames directly to the plot and refer to each column by name. For example, if you were to plot the column ‘price’ vs the column ‘area’ from a DataFrame df, you could call sns.lmplot(x=’area’, y=’price’, data=df).
 In this exercise, you will once again use the DataFrame auto containing the auto-mpg dataset. You will plot a linear regression illustrating the relationship between automobile weight and horse power.
 Instructions
 •	Import matplotlib.pyplot and seaborn using the standard names plt and snsrespectively.
 •	Plot a linear regression between the ‘weight’ column (on the x-axis) and the ‘hp’ column (on the y-axis) from the DataFrame auto.
-•	Display the plot as usual with plt.show(). This has been done for you, so hit ‘Submit Answer’ to view the plot.&lt;/p&gt;
+•	Display the plot as usual with plt.show(). This has been done for you, so hit ‘Submit Answer’ to view the plot.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Import plotting modules
+<pre><code class="language-{python}"># Import plotting modules
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -744,17 +718,17 @@ sns.lmplot(x='weight', y='hp', data =auto)
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Plotting residuals of a regression&lt;/p&gt;
+</code></pre>
+<p>Plotting residuals of a regression</p>
 
-&lt;p&gt;Often, you don’t just want to see the regression itself but also see the residuals to get a better idea how well the regression captured the data. Seaborn provides sns.residplot() for that purpose, visualizing how far datapoints diverge from the regression line.
+<p>Often, you don’t just want to see the regression itself but also see the residuals to get a better idea how well the regression captured the data. Seaborn provides sns.residplot() for that purpose, visualizing how far datapoints diverge from the regression line.
 In this exercise, you will visualize the residuals of a regression between the ‘hp’ column (horse power) and the ‘mpg’ column (miles per gallon) of the auto DataFrame used previously.
 Instructions
 •	Import matplotlib.pyplot and seaborn using the standard names plt and snsrespectively.
 •	Generate a green residual plot of the regression between ‘hp’ (on the x-axis) and ‘mpg’ (on the y-axis). You will need to specify the additional data and color parameters.
-•	Display the plot as usual using plt.show(). This has been done for you, so hit ‘Submit Answer’ to view the plot.&lt;/p&gt;
+•	Display the plot as usual using plt.show(). This has been done for you, so hit ‘Submit Answer’ to view the plot.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Import plotting modules
+<pre><code class="language-{python}"># Import plotting modules
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -763,11 +737,11 @@ sns.residplot(x='hp', y='mpg', data=auto, color='green')
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;p&gt;Higher-order regressions&lt;/p&gt;
+<p>Higher-order regressions</p>
 
-&lt;p&gt;When there are more complex relationships between two variables, a simple first order regression is often not sufficient to accurately capture the relationship between the variables. Seaborn makes it simple to compute and visualize regressions of varying orders.
+<p>When there are more complex relationships between two variables, a simple first order regression is often not sufficient to accurately capture the relationship between the variables. Seaborn makes it simple to compute and visualize regressions of varying orders.
 Here, you will plot a second order regression between the horse power (‘hp’) and miles per gallon (‘mpg’) using sns.regplot() (the function sns.lmplot() is a higher-level interface to sns.regplot()). However, before plotting this relationship, compare how the residual changes depending on the order of the regression. Does a second order regression perform significantly better than a simple linear regression?
 •	A principal difference between sns.lmplot() and sns.regplot() is the way in which matplotlib options are passed (sns.regplot() is more permissive).
 •	For both sns.lmplot() and sns.regplot(), the keyword order is used to control the order of polynomial regression.
@@ -778,9 +752,9 @@ Instructions
 o	You need to specify the label and color parameters, in addition to scatter=None.
 •	Plot a linear regression line of ‘order 2’ between ‘weight’ and ‘mpg’ in ‘green’ without the scatter points.
 o	To force a higher order regression, you need to specify the order parameter.
-•	Add a legend to the ‘upper right’.&lt;/p&gt;
+•	Add a legend to the ‘upper right’.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Generate a scatter plot of 'weight' and 'mpg' using red circles
+<pre><code class="language-{python}"># Generate a scatter plot of 'weight' and 'mpg' using red circles
 plt.scatter(auto['weight'], auto['mpg'], label='data', color='red', marker='o')
 
 # Plot in blue a linear regression of order 1 between 'weight' and 'mpg'
@@ -793,48 +767,48 @@ sns.regplot(x='weight', y='mpg', data=auto,scatter=None, color='green', label ='
 # Add a legend and display the plot
 plt.legend(loc='upper right')
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Grouping linear regressions by hue&lt;/p&gt;
+</code></pre>
+<p>Grouping linear regressions by hue</p>
 
-&lt;p&gt;Often it is useful to compare and contrast trends between different groups. Seaborn makes it possible to apply linear regressions separately for subsets of the data by applying a groupby operation. Using the hue argument, we can specify a categorical variable by which to group data observations. The distinct groups of points are used to produce distinct regressions with different hues in the plot.
+<p>Often it is useful to compare and contrast trends between different groups. Seaborn makes it possible to apply linear regressions separately for subsets of the data by applying a groupby operation. Using the hue argument, we can specify a categorical variable by which to group data observations. The distinct groups of points are used to produce distinct regressions with different hues in the plot.
 In the automobile dataset, we can view the relationship between weight and horsepower of the cars and group them by their origin, giving us a quick visual indication how the relationship differs by continent.
 Instructions
 •	Plot a linear regression between ‘weight’ and ‘hp’ grouped by ‘origin’.
 o	Use the keyword argument hue to group rows with the categorical column ‘origin’.
-o	Use the keyword argument palette to specify the ‘Set1’ palette for coloring the distinct groups.&lt;/p&gt;
+o	Use the keyword argument palette to specify the ‘Set1’ palette for coloring the distinct groups.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Plot a linear regression between 'weight' and 'hp', with a hue of 'origin' and palette of 'Set1'
+<pre><code class="language-{python}"># Plot a linear regression between 'weight' and 'hp', with a hue of 'origin' and palette of 'Set1'
 sns.lmplot(x='weight', y='hp', data=auto, hue='origin', palette='Set1')
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Grouping linear regressions by row or column&lt;/p&gt;
+</code></pre>
+<p>Grouping linear regressions by row or column</p>
 
-&lt;p&gt;Rather than overlaying linear regressions of grouped data in the same plot, we may want to use a grid of subplots. The sns.lmplot() accepts the arguments row and/or col to arrangements of subplots for regressions.
+<p>Rather than overlaying linear regressions of grouped data in the same plot, we may want to use a grid of subplots. The sns.lmplot() accepts the arguments row and/or col to arrangements of subplots for regressions.
 You’ll use the automobile dataset again and, this time, you’ll use the keyword argument row to display the subplots organized in rows. That is, you’ll produce horsepower vs. weight regressions grouped by continent of origin in separate subplots stacked vertically.
 Instructions
 •	Plot linear regressions of ‘hp’ (on the y-axis) versus ‘weight’ (on the x-axis) grouped row-wise by ‘origin’ from DataFrame auto.
-•	Use the keyword argument row to group observations with the categorical column ‘origin’ in subplots organized in rows.&lt;/p&gt;
+•	Use the keyword argument row to group observations with the categorical column ‘origin’ in subplots organized in rows.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Plot linear regressions between 'weight' and 'hp' grouped row-wise by 'origin'
+<pre><code class="language-{python}"># Plot linear regressions between 'weight' and 'hp' grouped row-wise by 'origin'
 sns.lmplot(x='weight', y='hp', data=auto, row='origin')
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Constructing strip plots&lt;/p&gt;
+</code></pre>
+<p>Constructing strip plots</p>
 
-&lt;p&gt;Regressions are useful to understand relationships between two continuous variables. Often we want to explore how the distribution of a single continuous variable is affected by a second categorical variable. Seaborn provides a variety of plot types to perform these types of comparisons between univariate distributions.
+<p>Regressions are useful to understand relationships between two continuous variables. Often we want to explore how the distribution of a single continuous variable is affected by a second categorical variable. Seaborn provides a variety of plot types to perform these types of comparisons between univariate distributions.
 The strip plot is one way of visualizing this kind of data. It plots the distribution of variables for each category as individual datapoints. For vertical strip plots (the default), distributions of continuous values are laid out parallel to the y-axis and the distinct categories are spaced out along the x-axis.
 •	For example, sns.stripplot(x=’type’, y=’length’, data=df) produces a sequence of vertical strip plots of length distributions grouped by type (assuming length is a continuous column and type is a categorical column of the DataFrame df).
 •	Overlapping points can be difficult to distinguish in strip plots. The argument jitter=True helps spread out overlapping points.
 •	Other matplotlib arguments can be passed to sns.stripplot(), e.g., marker, color, size, etc.
 Instructions
 •	In the first row of subplots, make a strip plot showing distribution of ‘hp’ values grouped horizontally by ‘cyl’.
-•	In the second row of subplots, make a second strip plot with improved readability. In particular, you’ll call sns.stripplot() again, this time adding jitter=True and decreasing the point size to 3 using the size parameter.&lt;/p&gt;
+•	In the second row of subplots, make a second strip plot with improved readability. In particular, you’ll call sns.stripplot() again, this time adding jitter=True and decreasing the point size to 3 using the size parameter.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Make a strip plot of 'hp' grouped by 'cyl'
+<pre><code class="language-{python}"># Make a strip plot of 'hp' grouped by 'cyl'
 plt.subplot(2,1,1)
 sns.stripplot(x='cyl', y='hp', data=auto)
 
@@ -844,19 +818,19 @@ sns.stripplot(x='cyl', y='hp', data=auto, jitter=True, size=3)
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Constructing swarm plots&lt;/p&gt;
+</code></pre>
+<p>Constructing swarm plots</p>
 
-&lt;p&gt;As you have seen, a strip plot can be visually crowded even with jitter applied and smaller point sizes. An alternative is provided by the swarm plot (sns.swarmplot()), which is very similar but spreads out the points to avoid overlap and provides a better visual overview of the data.
+<p>As you have seen, a strip plot can be visually crowded even with jitter applied and smaller point sizes. An alternative is provided by the swarm plot (sns.swarmplot()), which is very similar but spreads out the points to avoid overlap and provides a better visual overview of the data.
 •	The syntax for sns.swarmplot() is similar to that of sns.stripplot(), e.g., sns.swarmplot(x=’type’, y=’length’, data=df).
 •	The orientation for the continuous variable in the strip/swarm plot can be inferred from the choice of the columns x and y from the DataFrame data. The orientation can be set explicitly using orient=’h’ (horizontal) or orient=’v’ (vertical).
 •	Another grouping can be added in using the hue keyword. For instance, using sns.swarmplot(x=’type’, y=’length’, data=df, hue=’build year’) makes a swarm plot from the DataFrame df with the ‘length’ column values spread out vertically, horizontally grouped by the column ‘type’ and each point colored by the categorical column ‘build year’.
 In this exercise, you’ll use the auto DataFrame again to illustrate the use of sns.swarmplot() with grouping by hue and with explicit specification of the orientation using the keyword orient.
 Instructions
 •	In the first row of subplots, make a swarm plot showing distribution of ‘hp’ values grouped horizontally by ‘cyl’.
-•	In the second row of subplots, make a second swarm plot with horizontal orientation (i.e., grouped vertically by ‘cyl’ with ‘hp’ value spread out horizontally) with points colored by ‘origin’. You need to specify the orient parameter to explicitly set the horizontal orientation.&lt;/p&gt;
+•	In the second row of subplots, make a second swarm plot with horizontal orientation (i.e., grouped vertically by ‘cyl’ with ‘hp’ value spread out horizontally) with points colored by ‘origin’. You need to specify the orient parameter to explicitly set the horizontal orientation.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Generate a swarm plot of 'hp' grouped horizontally by 'cyl'  
+<pre><code class="language-{python}"># Generate a swarm plot of 'hp' grouped horizontally by 'cyl'  
 plt.subplot(2,1,1)
 sns.swarmplot(x='cyl', y='hp', data=auto )
 
@@ -866,18 +840,18 @@ sns.swarmplot(x='hp', y='cyl', data=auto, hue='origin',orient ='h')
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Constructing violin plots&lt;/p&gt;
+</code></pre>
+<p>Constructing violin plots</p>
 
-&lt;p&gt;Both strip and swarm plots visualize all the datapoints. For large datasets, this can result in significant overplotting. Therefore, it is often useful to use plot types which reduce a dataset to more descriptive statistics and provide a good summary of the data. Box and whisker plots are a classic way of summarizing univariate distributions but seaborn provides a more sophisticated extension of the standard box plot, called a violin plot.
+<p>Both strip and swarm plots visualize all the datapoints. For large datasets, this can result in significant overplotting. Therefore, it is often useful to use plot types which reduce a dataset to more descriptive statistics and provide a good summary of the data. Box and whisker plots are a classic way of summarizing univariate distributions but seaborn provides a more sophisticated extension of the standard box plot, called a violin plot.
 Here, you will produce violin plots of the distribution of horse power (‘hp’) by the number of cylinders (‘cyl’). Additionally, you will combine two different plot types by overlaying a strip plot on the violin plot.
 As before, the DataFrame has been pre-loaded for you as auto.
 Instructions
 •	In the first row of subplots, make a violin plot showing the distribution of ‘hp’ grouped by ‘cyl’.
 •	In the second row of subplots, make a second violin plot without the inner annotations (by specifying inner=None) and with the color ‘lightgray’.
-•	In the second row of subplots, overlay a strip plot with jitter and a point size of 1.5.&lt;/p&gt;
+•	In the second row of subplots, overlay a strip plot with jitter and a point size of 1.5.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Generate a violin plot of 'hp' grouped horizontally by 'cyl'
+<pre><code class="language-{python}"># Generate a violin plot of 'hp' grouped horizontally by 'cyl'
 plt.subplot(2,1,1)
 sns.violinplot(x='cyl', y='hp', data=auto)
 
@@ -890,26 +864,26 @@ sns.stripplot(x='cyl', y='hp', data=auto, size=1.5,jitter=True)
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Plotting joint distributions (1)&lt;/p&gt;
+</code></pre>
+<p>Plotting joint distributions (1)</p>
 
-&lt;p&gt;There are numerous strategies to visualize how pairs of continuous random variables vary jointly. Regression and residual plots are one strategy. Another is to visualize a bivariate distribution.
+<p>There are numerous strategies to visualize how pairs of continuous random variables vary jointly. Regression and residual plots are one strategy. Another is to visualize a bivariate distribution.
 Seaborn’s sns.jointplot() provides means of visualizing bivariate distributions. The basic calling syntax is similar to that of sns.lmplot(). By default, calling sns.jointplot(x, y, data) renders a few things:
 •	A scatter plot using the specified columns x and y from the DataFrame data.
 •	A (univariate) histogram along the top of the scatter plot showing distribution of the column x.
 •	A (univariate) histogram along the right of the scatter plot showing distribution of the column y.
 Instructions
-•	Use sns.jointplot() to visualize the joint variation of the columns ‘hp’ (on the x-axis) and ‘mpg’ (on the y-axis) from the DataFrame auto.&lt;/p&gt;
+•	Use sns.jointplot() to visualize the joint variation of the columns ‘hp’ (on the x-axis) and ‘mpg’ (on the y-axis) from the DataFrame auto.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Generate a joint plot of 'hp' and 'mpg'
+<pre><code class="language-{python}"># Generate a joint plot of 'hp' and 'mpg'
 sns.jointplot(x='hp', y='mpg', data=auto)
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Plotting joint distributions (2)&lt;/p&gt;
+</code></pre>
+<p>Plotting joint distributions (2)</p>
 
-&lt;p&gt;The seaborn function sns.jointplot() has a parameter kind to specify how to visualize the joint variation of two continuous random variables (i.e., two columns of a DataFrame)
+<p>The seaborn function sns.jointplot() has a parameter kind to specify how to visualize the joint variation of two continuous random variables (i.e., two columns of a DataFrame)
 •	kind=’scatter’ uses a scatter plot of the data points
 •	kind=’reg’ uses a regression plot (default order 1)
 •	kind=’resid’ uses a residual plot
@@ -917,24 +891,24 @@ plt.show()
 •	kind=’hex’ uses a hexbin plot of the joint distribution
 For this exercise, you will again use sns.jointplot() to display the joint distribution of the hp and mpgcolumns of the auto DataFrame. This time, you will use kind=’hex’ to generate a hexbin plot of the joint distribution.
 Instructions
-•	Create a hexbin plot of the joint distribution between ‘hp’ and ‘mpg’.&lt;/p&gt;
+•	Create a hexbin plot of the joint distribution between ‘hp’ and ‘mpg’.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Generate a joint plot of 'hp' and 'mpg' using a hexbin plot
+<pre><code class="language-{python}"># Generate a joint plot of 'hp' and 'mpg' using a hexbin plot
 sns.jointplot(x='hp', y='mpg', data=auto,kind='hex')
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Plotting distributions pairwise (1)&lt;/p&gt;
+</code></pre>
+<p>Plotting distributions pairwise (1)</p>
 
-&lt;p&gt;Data sets often contain more than two continuous variables. The function sns.jointplot() is restricted to representing joint variation between only two quantities (i.e., two columns of a DataFrame). Visualizing multivariate relationships is trickier.
+<p>Data sets often contain more than two continuous variables. The function sns.jointplot() is restricted to representing joint variation between only two quantities (i.e., two columns of a DataFrame). Visualizing multivariate relationships is trickier.
 The function sns.pairplot() constructs a grid of all joint plots pairwise from all pairs of (non-categorical) columns in a DataFrame. The syntax is very simple: sns.pairplot(df), where df is a DataFrame. The non-categorical columns are identified and the corresponding joint plots are plotted in a square grid of subplots. The diagonal of the subplot grid shows the univariate histograms of the individual columns.
 In this exercise, you will use a DataFrame auto comprising only three columns from the original auto-mpg data set.
 Instructions
 •	Print the first five rows of the DataFrame auto. This is done for you.
-•	Plot the joint distributions between columns from the entire DataFrame auto.&lt;/p&gt;
+•	Plot the joint distributions between columns from the entire DataFrame auto.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Print the first 5 rows of the DataFrame
+<pre><code class="language-{python}"># Print the first 5 rows of the DataFrame
 print(auto.head())
 
 # Plot the pairwise joint distributions from the DataFrame 
@@ -942,16 +916,16 @@ sns.pairplot(auto)
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Plotting distributions pairwise (2)&lt;/p&gt;
+</code></pre>
+<p>Plotting distributions pairwise (2)</p>
 
-&lt;p&gt;In this exercise, you will generate pairwise joint distributions again. This time, you will make two particular additions:
+<p>In this exercise, you will generate pairwise joint distributions again. This time, you will make two particular additions:
 •	You will display regressions as well as scatter plots in the off-diagonal subplots. You will do this with the argument kind=’reg’ (where ‘reg’ means ‘regression’). Another option for reg is ‘scatter’(the default) that plots scatter plots in the off-diagonal subplots.
 •	You will also visualize the joint distributions separated by continent of origin. You will do this with the keyword argument hue specifying the ‘origin’.
 Instructions
-•	Plot the pairwise joint distributions separated by continent of origin and display the regressions.&lt;/p&gt;
+•	Plot the pairwise joint distributions separated by continent of origin and display the regressions.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Print the first 5 rows of the DataFrame
+<pre><code class="language-{python}"># Print the first 5 rows of the DataFrame
 print(auto.head())
 
 # Plot the pairwise joint distributions grouped by 'origin' along with regression lines
@@ -959,16 +933,16 @@ sns.pairplot(auto,kind='reg',hue = 'origin')
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Visualizing correlations with a heatmap&lt;/p&gt;
+</code></pre>
+<p>Visualizing correlations with a heatmap</p>
 
-&lt;p&gt;Plotting relationships between many variables using a pair plot can quickly get visually overwhelming. It is therefore often useful to compute covariances between the variables instead. The covariance matrix can then easily be visualized as a heatmap. A heatmap is effectively a pseudocolor plot with labelled rows and columns (i.e., a pseudocolor plot based on a pandas DataFrame rather than a matrix). The DataFrame does not have to be square or symmetric (but, in the context of a covariance matrix, it is both).
+<p>Plotting relationships between many variables using a pair plot can quickly get visually overwhelming. It is therefore often useful to compute covariances between the variables instead. The covariance matrix can then easily be visualized as a heatmap. A heatmap is effectively a pseudocolor plot with labelled rows and columns (i.e., a pseudocolor plot based on a pandas DataFrame rather than a matrix). The DataFrame does not have to be square or symmetric (but, in the context of a covariance matrix, it is both).
 In this exercise, you will view the covariance matrix between the continuous variables in the auto-mpg dataset. You do not have to know here how the covariance matrix is computed; the important point is that its diagonal entries are all 1s, and the off-diagonal entries are between -1 and +1 (quantifying the degree to which variable pairs vary jointly). It is also, then, a symmetric matrix.
 Instructions
 •	Print the covariance matrix cov_matrix to examine its contents and labels. This has been done for you.
-•	Plot the covariance matrix cov_matrix using sns.heatmap().&lt;/p&gt;
+•	Plot the covariance matrix cov_matrix using sns.heatmap().</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Print the covariance matrix
+<pre><code class="language-{python}"># Print the covariance matrix
 print(cov_matrix)
 
 # Visualize the covariance matrix using a heatmap
@@ -976,19 +950,19 @@ sns.heatmap(cov_matrix)
 
 # Display the heatmap
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Multiple time series on common axes&lt;/p&gt;
+</code></pre>
+<p>Multiple time series on common axes</p>
 
-&lt;p&gt;For this exercise, you will construct a plot showing four time series stocks on the same axes. The time series in question are represented in the session using the identifiers aapl, ibm, csco, and msft. You’ll generate a single plot showing all the time series on common axes with a legend.
+<p>For this exercise, you will construct a plot showing four time series stocks on the same axes. The time series in question are represented in the session using the identifiers aapl, ibm, csco, and msft. You’ll generate a single plot showing all the time series on common axes with a legend.
 Instructions
 •	Plot the aapl time series in ‘blue’ with a label of ‘AAPL’.
 •	Plot the ibm time series in ‘green’ with a label of ‘IBM’.
 •	Plot the csco time series in ‘red’ with a label of ‘CSCO’.
 •	Plot the msft time series in ‘magenta’ with a label of ‘MSFT’.
 •	Specify a rotation of 60 for the xticks with plt.xticks().
-•	Add a legend in the ‘upper left’ corner of the plot.&lt;/p&gt;
+•	Add a legend in the ‘upper left’ corner of the plot.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Import matplotlib.pyplot
+<pre><code class="language-{python}"># Import matplotlib.pyplot
 import matplotlib.pyplot as plt
 
 # Plot the aapl time series in blue
@@ -1011,19 +985,19 @@ plt.xticks(rotation =60)
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Multiple time series slices (1)&lt;/p&gt;
+</code></pre>
+<p>Multiple time series slices (1)</p>
 
-&lt;p&gt;You can easily slice subsets corresponding to different time intervals from a time series. In particular, you can use strings like ‘2001:2005’, ‘2011-03:2011-12’, or ‘2010-04-19:2010-04-30’ to extract data from time intervals of length 5 years, 10 months, or 12 days respectively.
-•	Unlike slicing from standard Python lists, tuples, and strings, when slicing time series by labels (and other pandas Series &amp;amp; DataFrames by labels), the slice includes the right-most portion of the slice. That is, extracting my_time_series[‘1990’:’1995’] extracts data from my_time_series corresponding to 1990, 1991, 1992, 1993, 1994, and 1995 inclusive.
+<p>You can easily slice subsets corresponding to different time intervals from a time series. In particular, you can use strings like ‘2001:2005’, ‘2011-03:2011-12’, or ‘2010-04-19:2010-04-30’ to extract data from time intervals of length 5 years, 10 months, or 12 days respectively.
+•	Unlike slicing from standard Python lists, tuples, and strings, when slicing time series by labels (and other pandas Series &amp; DataFrames by labels), the slice includes the right-most portion of the slice. That is, extracting my_time_series[‘1990’:’1995’] extracts data from my_time_series corresponding to 1990, 1991, 1992, 1993, 1994, and 1995 inclusive.
 •	You can use partial strings or datetime objects for indexing and slicing from time series.
 For this exercise, you will use time series slicing to plot the time series aapl over its full 11-year range and also over a shorter 2-year range. You’ll arrange these plots in a 2×12×1 grid of subplots
 Instructions
 •	Plot the series aapl in ‘blue’ in the top subplot of a vertically-stacked pair of subplots, with the xticks rotated to 45 degrees.
 •	Extract a slice named view from the series aapl containing data from the years 2007 to 2008 (inclusive). This has been done for you.
-•	Plot the slice view in ‘black’ in the bottom subplot.&lt;/p&gt;
+•	Plot the slice view in ‘black’ in the bottom subplot.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Plot the series in the top subplot in blue
+<pre><code class="language-{python}"># Plot the series in the top subplot in blue
 plt.subplot(2,1,1)
 plt.xticks(rotation=45) 
 plt.title('AAPL: 2001 to 2011')
@@ -1039,18 +1013,18 @@ plt.title('AAPL: 2007 to 2008')
 plt.plot(view , color='black')
 plt.tight_layout()
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Multiple time series slices (2)&lt;/p&gt;
+</code></pre>
+<p>Multiple time series slices (2)</p>
 
-&lt;p&gt;In this exercise, you will use the same time series aapl from the previous exercise and plot tighter views of the data.
+<p>In this exercise, you will use the same time series aapl from the previous exercise and plot tighter views of the data.
 •	Partial string indexing works without slicing as well. For instance, using my_time_series[‘1995’],my_time_series[‘1999-05’], and my_time_series[‘2000-11-04’] respectively extracts views of the time series my_time_series corresponding to the entire year 1995, the entire month May 1999, and the entire day November 4, 2000.
 Instructions
 •	Extract a slice named view from the series aapl containing data from November 2007 to April 2008 (inclusive). This has been done for you.
 •	Plot the slice view in ‘red’ in the top subplot of a vertically-stacked pair of subplots with the xticks rotated to 45 degrees.
 •	Reassign the slice view to contain data from the series aapl for January 2008. This has been done for you.
-•	Plot the slice view in ‘green’ in the bottom subplot with the xticks rotated to 45 degrees.&lt;/p&gt;
+•	Plot the slice view in ‘green’ in the bottom subplot with the xticks rotated to 45 degrees.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Slice aapl from Nov. 2007 to Apr. 2008 inclusive: view
+<pre><code class="language-{python}"># Slice aapl from Nov. 2007 to Apr. 2008 inclusive: view
 view = aapl['2007-11':'2008-04']
 
 # Plot the sliced series in the top subplot in red
@@ -1071,17 +1045,17 @@ plt.plot(view , color='green')
 # Improve spacing and display the plot
 plt.tight_layout()
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Plotting an inset view&lt;/p&gt;
+</code></pre>
+<p>Plotting an inset view</p>
 
-&lt;p&gt;Remember, rather than comparing plots with subplots or overlayed plots, you can generate an inset view directly using plt.axes(). In this exercise, you’ll reproduce two of the time series plots from the preceding two exercises. Your figure will contain an inset plot to highlight the dramatic changes in AAPL stock price between November 2007 and April 2008 (as compared to the 11 years from 2001 to 2011).
+<p>Remember, rather than comparing plots with subplots or overlayed plots, you can generate an inset view directly using plt.axes(). In this exercise, you’ll reproduce two of the time series plots from the preceding two exercises. Your figure will contain an inset plot to highlight the dramatic changes in AAPL stock price between November 2007 and April 2008 (as compared to the 11 years from 2001 to 2011).
 Instructions
 •	Extract a slice of series aapl from November 2007 to April 2008 inclusive. This has been done for you.
 •	Plot the entire series aapl.
 •	Create a set of axes with lower left corner (0.25, 0.5), width 0.35, and height 0.35. Pass these coordinates to plt.axes() as a list (all in units relative to the figure dimensions).
-•	Plot the sliced view in the current axes in ‘red’.&lt;/p&gt;
+•	Plot the sliced view in the current axes in ‘red’.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Slice aapl from Nov. 2007 to Apr. 2008 inclusive: view
+<pre><code class="language-{python}"># Slice aapl from Nov. 2007 to Apr. 2008 inclusive: view
 view = aapl['2007-11':'2008-04']
 
 # Plot the entire series 
@@ -1097,19 +1071,19 @@ plt.plot(view,color='red')
 plt.xticks(rotation=45)
 plt.title('2007/11-2008/04')
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Plotting moving averages&lt;/p&gt;
+</code></pre>
+<p>Plotting moving averages</p>
 
-&lt;p&gt;In this exercise, you will plot pre-computed moving averages of AAPL stock prices in distinct subplots.
+<p>In this exercise, you will plot pre-computed moving averages of AAPL stock prices in distinct subplots.
 •	The time series aapl is overlayed in black in each subplot for comparison.
 •	The time series mean_30, mean_75, mean_125, and mean_250 have been computed for you (containing the windowed averages of the series aapl computed over windows of width 30 days, 75 days, 125 days, and 250 days respectively).
 Instructions
 •	In the top left subplot, plot the 30-day moving averages series mean_30 in ‘green’.
 •	In the top right subplot, plot the 75-day moving averages series mean_75 in ‘red’.
 •	In the bottom left subplot, plot the 125-day moving averages series mean_125 in ‘magenta’.
-•	In the bottom right subplot, plot the 250-day moving averages series mean_250 in ‘cyan’.&lt;/p&gt;
+•	In the bottom right subplot, plot the 250-day moving averages series mean_250 in ‘cyan’.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Plot the 30-day moving average in the top left subplot in green
+<pre><code class="language-{python}"># Plot the 30-day moving average in the top left subplot in green
 plt.subplot(2,2,1)
 plt.plot(mean_30 , color='green')
 plt.plot(aapl, 'k-.')
@@ -1139,21 +1113,21 @@ plt.title('250d averages')
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Plotting moving standard deviations&lt;/p&gt;
+</code></pre>
+<p>Plotting moving standard deviations</p>
 
-&lt;p&gt;Having plotted pre-computed moving averages of AAPL stock prices on distinct subplots in the previous exercise, you will now plot pre-computed moving standard deviations of the same stock prices, this time together on common axes.
+<p>Having plotted pre-computed moving averages of AAPL stock prices on distinct subplots in the previous exercise, you will now plot pre-computed moving standard deviations of the same stock prices, this time together on common axes.
 •	The time series aapl is not plotted in this case; it is of a different length scale than the standard deviations.
-•	The time series std_30, std_75, stdn_125, &amp;amp; std_250 have been computed for you (containing the windowed standard deviations of the series aapl computed over windows of width 30 days, 75 days, 125 days, &amp;amp; 250 days respectively).
+•	The time series std_30, std_75, stdn_125, &amp; std_250 have been computed for you (containing the windowed standard deviations of the series aapl computed over windows of width 30 days, 75 days, 125 days, &amp; 250 days respectively).
 Instructions
 •	Produce a single plot with four curves overlayed:
 o	the series std_30 in ‘red’ (with corresponding label ‘30d’).
 o	the series std_75 in ‘cyan’ (with corresponding label ‘75d’).
 o	the series std_125 in ‘green’ (with corresponding label ‘125d’).
 o	the series std_250 in ‘magenta’ (with corresponding label ‘250d’).
-•	Add a legend to the ‘upper left’ corner of the plot.&lt;/p&gt;
+•	Add a legend to the ‘upper left’ corner of the plot.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Plot std_30 in red
+<pre><code class="language-{python}"># Plot std_30 in red
 plt.plot(std_30 , color='red', label='30d')
 
 # Plot std_75 in cyan
@@ -1173,10 +1147,10 @@ plt.title('Moving standard deviations')
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Extracting a histogram from a grayscale image&lt;/p&gt;
+</code></pre>
+<p>Extracting a histogram from a grayscale image</p>
 
-&lt;p&gt;For grayscale images, various image processing algorithms use an image histogram. Recall that an image is a two-dimensional array of numerical intensities. An image histogram, then, is computed by counting the occurences of distinct pixel intensities over all the pixels in the image.
+<p>For grayscale images, various image processing algorithms use an image histogram. Recall that an image is a two-dimensional array of numerical intensities. An image histogram, then, is computed by counting the occurences of distinct pixel intensities over all the pixels in the image.
 For this exercise, you will load an unequalized low contrast image of Hawkes Bay, New Zealand (originally by Phillip Capper, modified by User:Konstable, via Wikimedia Commons, CC BY 2.0). You will plot the image and use the pixel intensity values to plot a normalized histogram of pixel intensities.
 Instructions
 •	Load data from the file ‘640px-Unequalized_Hawkes_Bay_NZ.jpg’ into an array.
@@ -1184,9 +1158,9 @@ Instructions
 •	Flatten image into a 1-D array using the .flatten() method.
 •	Display a histogram of pixels in the bottom subplot.
 o	Use histogram options bins=64, range=(0,256), and normed=True to control numerical binning and the vertical scale.
-o	Use plotting options color=’red’ and alpha=0.4 to tailor the color and transparency.&lt;/p&gt;
+o	Use plotting options color=’red’ and alpha=0.4 to tailor the color and transparency.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Load the image into an array: image
+<pre><code class="language-{python}"># Load the image into an array: image
 image =  plt.imread('640px-Unequalized_Hawkes_Bay_NZ.jpg')
 # Display image in top subplot using color map 'gray'
 plt.subplot(2,1,1)
@@ -1205,10 +1179,10 @@ plt.hist(pixels, bins=64, range=(0,256),normed=True, color='red', alpha=0.4)
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Cumulative Distribution Function from an image histogram&lt;/p&gt;
+</code></pre>
+<p>Cumulative Distribution Function from an image histogram</p>
 
-&lt;p&gt;A histogram of a continuous random variable is sometimes called a Probability Distribution Function (or PDF). The area under a PDF (a definite integral) is called a Cumulative Distribution Function (or CDF). The CDF quantifies the probability of observing certain pixel intensities.
+<p>A histogram of a continuous random variable is sometimes called a Probability Distribution Function (or PDF). The area under a PDF (a definite integral) is called a Cumulative Distribution Function (or CDF). The CDF quantifies the probability of observing certain pixel intensities.
 Your task here is to plot the PDF and CDF of pixel intensities from a grayscale image. You will use the grayscale image of Hawkes Bay, New Zealand (originally by Phillip Capper, modified by User:Konstable, via Wikimedia Commons, CC BY 2.0). This time, the 2D array image will be pre-loaded and pre-flattened into the 1D array pixels for you.
 •	The histogram option cumulative=True permits viewing the CDF instead of the PDF.
 •	Notice that plt.grid(‘off’) switches off distracting grid lines.
@@ -1221,9 +1195,9 @@ o	Use the plotting options alpha=0.4 and color=’red’ to make the overlayed p
 •	Third, call plt.hist() again to overlay the CDF in the bottom subplot.
 o	Use the histogram options bins=64, range=(0,256), and normed=True.
 o	This time, also use cumulative=True to compute and display the CDF.
-o	Also, use alpha=0.4 and color=’blue’ to make the overlayed plots easier to see.&lt;/p&gt;
+o	Also, use alpha=0.4 and color=’blue’ to make the overlayed plots easier to see.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Load the image into an array: image
+<pre><code class="language-{python}"># Load the image into an array: image
 image = plt.imread('640px-Unequalized_Hawkes_Bay_NZ.jpg')
 
 # Display image in top subplot using color map 'gray'
@@ -1252,12 +1226,12 @@ cdf = plt.hist(pixels, bins=64, range=(0,256),
 # Specify x-axis range, hide axes, add title and display plot
 plt.xlim((0,256))
 plt.grid('off')
-plt.title('PDF &amp;amp; CDF (original image)')
+plt.title('PDF &amp; CDF (original image)')
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Equalizing an image histogram&lt;/p&gt;
+</code></pre>
+<p>Equalizing an image histogram</p>
 
-&lt;p&gt;Histogram equalization is an image processing procedure that reassigns image pixel intensities. The basic idea is to use interpolation to map the original CDF of pixel intensities to a CDF that is almost a straight line. In essence, the pixel intensities are spread out and this has the practical effect of making a sharper, contrast-enhanced image. This is particularly useful in astronomy and medical imaging to help us see more features.
+<p>Histogram equalization is an image processing procedure that reassigns image pixel intensities. The basic idea is to use interpolation to map the original CDF of pixel intensities to a CDF that is almost a straight line. In essence, the pixel intensities are spread out and this has the practical effect of making a sharper, contrast-enhanced image. This is particularly useful in astronomy and medical imaging to help us see more features.
 For this exercise, you will again work with the grayscale image of Hawkes Bay, New Zealand (originally by Phillip Capper, modified by User:Konstable, via Wikimedia Commons, CC BY 2.0). Notice the sample code produces the same plot as the previous exercise. Your task is to modify the code from the previous exercise to plot the new equalized image as well as its PDF and CDF.
 •	The arrays image and pixels are extracted for you in advance.
 •	The CDF of the original image is computed using plt.hist().
@@ -1267,9 +1241,9 @@ Instructions
 •	Display new_image with a ‘gray’ color map to display the sharper, equalized image.
 •	Plot the PDF of new_pixels in ‘red’.
 •	Use plt.twinx() to overlay plots with different vertical scales on a common horizontal axis.
-•	Plot the CDF of new_pixels in ‘blue’.&lt;/p&gt;
+•	Plot the CDF of new_pixels in ‘blue’.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;image = plt.imread('640px-Unequalized_Hawkes_Bay_NZ.jpg')
+<pre><code class="language-{python}">image = plt.imread('640px-Unequalized_Hawkes_Bay_NZ.jpg')
 
 # Flatten the image into 1 dimension: pixels
 pixels = image.flatten()
@@ -1303,23 +1277,23 @@ plt.xlim((0,256))
 plt.grid('off')
 
 # Add title
-plt.title('PDF &amp;amp; CDF (equalized image)')
+plt.title('PDF &amp; CDF (equalized image)')
 
 # Generate a cumulative histogram of the new pixels
 cdf = plt.hist(new_pixels, bins=64, range=(0,256),
                cumulative=True, normed=True,
                color='blue', alpha=0.4)
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Extracting histograms from a color image&lt;/p&gt;
+</code></pre>
+<p>Extracting histograms from a color image</p>
 
-&lt;p&gt;This exercise resembles the last in that you will plot histograms from an image. This time, you will use a color image of the Helix Nebula as seen by the Hubble and the Cerro Toledo Inter-American Observatory. The separate RGB (red-green-blue) channels will be extracted for you as two-dimensional arrays red, green, and bluerespectively. You will plot three overlaid color histograms on common axes (one for each channel) in a subplot as well as the original image in a separate subplot.
+<p>This exercise resembles the last in that you will plot histograms from an image. This time, you will use a color image of the Helix Nebula as seen by the Hubble and the Cerro Toledo Inter-American Observatory. The separate RGB (red-green-blue) channels will be extracted for you as two-dimensional arrays red, green, and bluerespectively. You will plot three overlaid color histograms on common axes (one for each channel) in a subplot as well as the original image in a separate subplot.
 Instructions
 •	Display image in the top subplot of a 2×12×1 subplot grid. Don’t use a colormap here.
 •	Flatten the 2-D arrays red, green, and blue into 1-D arrays.
-•	Display three histograms in the bottom subplot: one for red_pixels, one for green_pixels, and one for blue_pixels. For each, use 64 bins and specify a translucency of alpha=0.2.&lt;/p&gt;
+•	Display three histograms in the bottom subplot: one for red_pixels, one for green_pixels, and one for blue_pixels. For each, use 64 bins and specify a translucency of alpha=0.2.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Load the image into an array: image
+<pre><code class="language-{python}"># Load the image into an array: image
 image = plt.imread('hs-2004-32-b-small_web.jpg')
 
 # Display image in top subplot
@@ -1346,17 +1320,17 @@ plt.hist(green_pixels, bins =64, normed=True, color='green', alpha=0.2)
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Extracting bivariate histograms from a color image&lt;/p&gt;
+</code></pre>
+<p>Extracting bivariate histograms from a color image</p>
 
-&lt;p&gt;Rather than overlaying univariate histograms of intensities in distinct channels, it is also possible to view the joint variation of pixel intensity in two different channels.
-For this final exercise, you will use the same color image of the Helix Nebula as seen by the Hubble and the Cerro Toledo Inter-American Observatory. The separate RGB (red-green-blue) channels will be extracted for you as one-dimensional arrays red_pixels, green_pixels, &amp;amp; blue_pixels respectively.
+<p>Rather than overlaying univariate histograms of intensities in distinct channels, it is also possible to view the joint variation of pixel intensity in two different channels.
+For this final exercise, you will use the same color image of the Helix Nebula as seen by the Hubble and the Cerro Toledo Inter-American Observatory. The separate RGB (red-green-blue) channels will be extracted for you as one-dimensional arrays red_pixels, green_pixels, &amp; blue_pixels respectively.
 Instructions
 •	Make a 2-D histogram in the top left subplot showing the joint variation of red_pixels (on the x-axis) and green_pixels (on the y-axis). Use bins=(32,32) to control binning.
 •	Make a 2-D histogram in the top right subplot showing the joint variation of green_pixels (on the x-axis) and blue_pixels (on the y-axis). Use bins=(32,32) to control binning.
-•	Make a 2-D histogram in the bottom left subplot showing the joint variation of blue_pixels (on the x-axis) and red_pixels (on the y-axis). Use bins=(32,32) to control binning.&lt;/p&gt;
+•	Make a 2-D histogram in the bottom left subplot showing the joint variation of blue_pixels (on the x-axis) and red_pixels (on the y-axis). Use bins=(32,32) to control binning.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# Load the image into an array: image
+<pre><code class="language-{python}"># Load the image into an array: image
 image = plt.imread('hs-2004-32-b-small_web.jpg')
 
 # Extract RGB channels and flatten into 1-D array
@@ -1393,16 +1367,63 @@ plt.hist2d(blue_pixels,red_pixels, bins =(32,32))
 
 # Display the plot
 plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-        <pubDate>Thu, 02 Mar 2017 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/2017/03/02/Note_datacamp_python1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/03/02/Note_datacamp_python1.html</guid>
-        
-        <category>Python</category>
-        
-        
-      </item>
+</code></pre>
+
+
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'glennpeng';
     
-  </channel>
-</rss>
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+      <div class="footer-col  footer-col-1">
+        <ul class="social-media-list">
+           <li>
+             <i class="fa fa-envelope"></i>
+             <a href="mailto:glenn73831@gmail.com">glenn73831@gmail.com</a>
+          </li>
+          
+          <li>
+              <i class="fa fa-github"></i>
+              <a href="https://github.com/ilanglenn"><span class="username">ilanglenn</span></a>
+          </li>
+          
+          <li>
+            <i class="fa fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/glennpeng/"><span class="username">Glenn Peng</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-23">
+        <p class="text">Glenn's Blog 
+</p>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
