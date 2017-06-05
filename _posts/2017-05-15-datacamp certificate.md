@@ -7,6 +7,7 @@ output:
 tags: [Python,R]
 use_math : true
 ---
+Courses completed certificates from datacamp.com
 
 #### Python Courses Completed:
 
