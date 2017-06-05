@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Jun 2017 13:04:01 -0500</pubDate>
-    <lastBuildDate>Sun, 04 Jun 2017 13:04:01 -0500</lastBuildDate>
+    <pubDate>Sun, 04 Jun 2017 21:14:04 -0500</pubDate>
+    <lastBuildDate>Sun, 04 Jun 2017 21:14:04 -0500</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -121,9 +121,72 @@ Applied our methods to a breast cancer microarray dataset from University of Sou
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Tue, 02 May 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/05/02/resume.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/05/02/resume.html</guid>
+        <pubDate>Sun, 04 Jun 2017 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2017/06/04/resume.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/04/resume.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Certificates on datacamp.com</title>
+        <description>&lt;h4 id=&quot;python-courses-completed&quot;&gt;Python Courses Completed:&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/fb48800b52ed9a733aa3c8a53f1446be567e6ff0&quot;&gt;Intro to Python for Data Science&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/268f6dbc43eb24638b80310ce65ea925214fdb12&quot;&gt;Intermediate Python for Data Science&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/6eb0a3b1d810726146dd21cd39311c0bdcc16aab&quot;&gt;Python Data Science Toolbox(Part 1)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/b388ba5079f8c3ac9350bea6c341d7569444a238&quot;&gt;Importing Data in Python (Part 1)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/5949f927b60fe0789932a304a379d354b4de3eba&quot;&gt;pandas Foundations&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/f614a75cbe2063fd581f8e3239d4ba6ead54d08b&quot;&gt;Introduction to Data Visualization with Python&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/09bda5a5113acde9f32bb5a845e2ab1dbb5f7efc&quot;&gt;Statistical Thinking in Python (Part 1)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/e541f31fc03f16b94f8f180d8ca4928be9c2e922&quot;&gt;Statistical Thinking in Python (Part 2)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/04f6fee1d935bab4b026d6282acad75c5a37c059&quot;&gt;Introduction to Databases in Python&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;r-courses-completed&quot;&gt;R Courses Completed:&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/c448a87633faa68b643f3919039c3aa546608cfb&quot;&gt;Introduction to R&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/f1b4bcf9a0ebcb12cbaf7f5d37dabf257b3f0e81&quot;&gt;Intermediate R&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/e19517a921efe20efaac63db21e60ff0f35844f0&quot;&gt;Intermediate R - Practice&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/ecd46c6a2f60a8804a78f137835956148cd317d9&quot;&gt;Importing Data in R (Part 1)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/d5d5efc218f3ad8d31199c3b468a73a8b7f4f7f0&quot;&gt;Machine Learning Toolbox&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/d9e12ee104850cb1cc7f601e0956f4c8c19db899&quot;&gt;Cleaning Data in R&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/ac0efb266a5d00411507ae6f7c2a4fb852d5b849&quot;&gt;Data Manipulation in R with dplyr&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/9540490341d12173ebfbe133d9dcdcc8c477e3c6&quot;&gt;Joining Data in R with dplyr&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/de6280656683eed565ea1cbcf5443cb544c4b6aa&quot;&gt;Correlation and Regression&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/5c0970e617e8326de2fa9e8bb917b385af07e8d4&quot;&gt;Exploratory Data Analysis&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/254a281a955bddb17584bd61465140668a28f208&quot;&gt;Introduction to Data&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/62c4defe9d770e2d440d72682b7c84c86add3ed7&quot;&gt;Importing Data in R (Part2)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/statement-of-accomplishment/course/0b8e0b6bfdcab560027c80e9123843da2d8c7112&quot;&gt;Importing &amp;amp; Cleaning Data in R: Case Studies&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To be continued . . .&lt;/p&gt;
+</description>
+        <pubDate>Mon, 15 May 2017 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2017/05/15/datacamp-certificate.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/15/datacamp-certificate.html</guid>
+        
+        <category>Python</category>
+        
+        <category>R</category>
         
         
       </item>
